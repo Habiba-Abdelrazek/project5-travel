@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,800;1,200;1,600;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="Home">
+        <!-- <img src="../images/logo.jpg" alt="logo"> -->
+        <nav>
+            <h1>Travello &#127758; &#9889;</h1>
+
+            <!-- <button onclick="myFunction()">*</button>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+            </script> -->
+
+            <div class="container">
+                <div class="topnav">
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Places">Places</a>
+                    <a href="#Clients">Clients</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="#login" class="color">Login</a>
+                    <a href="#Register" class="color">Register</a>
+
+                </div>
+            </div>
+        </nav>
+        <br><br>
+        <div class="div1">
+            <p style="font-size: 22px;"><b>explore the beauty of the world!</b></p>
+            <p style="font-size: 22px;"><b>let us take you away..</b></p>
+            <br>
+            <button class="btn"><span>Explore now</span></button>
+        </div>
+    </header>
+    <img id="About" src="../images/about2.png" alt="" width="96%">
+    <div id="Places" class="div2">
+        <hr>
+        <br><br>
+        <h2>Start Your Journey</h2>
+        <br><br>
+
+        <div class="clearfix">
+            <div class="img-container">
+                <img src="../images/germany.jpg" alt="germany" width="100%">
+                <div class="place_name">
+                    <p>Germany</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="../images/USA.jpg" alt="USA" width="100%">
+                <div class="place_name">
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="../images/france.jpg" alt="France" width="100%">
+                <div class="place_name">
+                    <p>France</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="img-container">
+                <img src="../images/UAE.jpg" alt="UAE" width="100%" height="60%">
+                <div class="place_name">
+                    <p>UAE</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="../images/turkey.jpg" alt="turkey" width="100%">
+                <div class="place_name">
+                    <p>Turkey</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="../images/spain.jpg" alt="spain" width="100%">
+                <div class="place_name">
+                    <p>Spain</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+    </div>
+
+    <div id="Clients" class="div3">
+        <br><br>
+        <h2>Clients Reviews</h2>
+        <br><br>
+        <div class="clearfix" style="display: flex;">
+            <div class="img2-container">
+                <img src="../images/profile.png" alt="photo" width="50%">
+                <div class="place_name">
+                    <h5>Margaret</h5>
+                    <p><q>Fast, helpful and efficient service,
+                            would definitely use again and will
+                            recommend to others</q>
+                    </p>
+                </div>
+            </div>
+            <div class="img2-container">
+                <img src="../images/profile.png" alt="photo" width="50%">
+                <div class="place_name">
+                    <h5>Samantha</h5>
+                    <p><q>We are very grateful for the
+                            excellent holiday you booked for us.
+                            We will approach you again next year!</q>
+                    </p>
+                </div>
+            </div>
+            <div class="img2-container">
+                <img src="../images/profile.png" alt="photo" width="50%">
+                <div class="place_name">
+                    <h5>Olivia</h5>
+                    <p><q>The service was great,
+                            informative and responsive.</q>
+                    </p>
+                </div>
+            </div>
+            <div class="img2-container">
+                <img src="../images/profile.png" alt="photo" width="50%">
+                <div class="place_name">
+                    <h5>Elizabeth</h5>
+                    <p><q>Travel online made our holiday
+                            planning very easy!! Will use them
+                            again for sure</q>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="div4">
+        <h2>Book Now</h2>
+        <!-- book the tour -->
+        <div>
+            <h4>Tour</h4>
+            <br>
+            <form method="post" novalidate target="_blank">
+                <label for="q">Destination</label>
+                <select name="book" id="q">
+                    <option value="0" disabled>select</option>
+
+                    <option value="1">Germany</option>
+                    <option value="2">USA</option>
+                    <option value="3">France</option>
+                    <option value="4" selected>UAE</option>
+                    <option value="5">Turkey</option>
+                    <option value="6">Spain</option>
+
+                </select>
+                <div>
+                    <label>Check In</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Check Out</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Duration</label>
+                    <input type="number" name="number" min="0" max="500">
+                </div>
+                <div>
+                    <label>Members</label>
+                    <input type="number" name="number" min="0" max="10">
+                </div>
+                <div>
+                    <label>Budget</label>
+                    <input type="range" name="range" value="0">
+                </div>
+            </form>
+        </div>
+
+        <!-- book the flights -->
+        <div>
+            <h4>Flights</h4>
+            <br>
+            <form method="post" novalidate target="_blank">
+                <div>
+                    <input id="m" type="radio" name="trip">
+                    <label for="m">Round Trip</label>
+                </div>
+                <div>
+                    <input id="n" type="radio" name="trip">
+                    <label for="n">On Way</label>
+                </div>
+                <div>
+                    <label>From</label>
+                    <input type="text" required placeholder="Enter your country">
+                </div>
+                <div>
+                    <label>To</label>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <label>Departure</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Return</label>
+                    <input type="date" required>
+                </div>
+                <div>
+                    <label>Class</label>
+                    <input type="number" name="number" min="0" max="10">
+                </div>
+                <div>
+                    <label>email</label>
+                    <input type="email" required value="aaaa@gmail.com">
+                </div>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+
+    </div>
+
+    <br><br>
+    <div class="div5">
+        <h1>Travello</h1>
+        <h2>Best Travel Agency</h2>
+        <p>&#169; copyright Travello</p>
+        <br>
+        <img src="../images/facebook.png" alt="FB" width="3%" height="3%">
+        <img src="../images/instagram.png" alt="instagram" width="3%" height="3%">
+        <img src="../images/twitter.png" alt="tweet" width="3%" height="3%">
+        <img src="../images/youtube.png" alt="YB" width="3%" height="3%">
+        <!-- <img src="../images/travel_gif.gif" alt="gif" class="gif"> -->
+    </div>
+
+</body>
+
+</html>
